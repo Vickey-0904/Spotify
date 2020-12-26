@@ -16,7 +16,7 @@
   margin-bottom: 5px; }
 
 .cover {
-  margin: 20px 10px; }
+  margin: 10px; }
 
 .track-name {
   display: flex;
@@ -152,6 +152,20 @@ body {
     justify-content: space-between;
     margin-left: 30px;
     margin-right: 30px; } }
+@media only screen and (max-width: 330px) {
+  .pic {
+    width: 80%; }
+
+  .cover {
+    display: flex;
+    justify-content: center; }
+
+  .spotify {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); } }
 @media only screen and (min-width: 411px) {
   .spotify {
     margin: 0;
