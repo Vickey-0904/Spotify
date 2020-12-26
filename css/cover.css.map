@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAM;EACF,MAAM,EAAE,SAAS;;AAGrB,WAAW;EACP,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,MAAM,EAAE,MAAM;EACd,WAAW,EAAE,MAAM",
+"sources": ["../sass/cover.scss"],
+"names": [],
+"file": "cover.css"
+}

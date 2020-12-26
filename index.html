@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="spotify">
+        <header class="header">
+            <div class="down"><img src="assets\down-arrow.svg" alt="down" width="20px"></div>
+            <div class="title">Goblin OST Full Album</div>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </header>
+        <section class="cover">
+            <img src="assets\cover.jpg" alt="cover" width="100%" style="border-radius: 5px">
+        </section>
+
+        <section class="track-name">
+            <div class="name">
+                <div style="font-weight: 500; font-size: 18px; color: #ffffff;">Beautiful</div>
+                <div style="font-weight: 300; font-size: 14px; color: #CFD7D9;">Crush</div>
+            </div>
+
+            <div class="heart">
+                <img src="assets\heart.svg" alt="heart" width="20px">
+            </div>
+        </section>
+
+        <section class="controls">
+            <!-- timeline -->
+            <div class="music-box">
+                <div class="box">
+                     <input type="range" step="1" class="seekbar" value="0" min="0" max="230" oninput="handleSeekBar()">
+            <audio class="music-element">
+                <source src="assets\audio\04_Beautiful_Crush_Goblin.mp3" type="audio/mp3">
+            </audio> 
+                </div>
+
+            <div class="time">
+                <div class="current-time">0:0</div><div class="duration">3:50</div>
+            </div>
+                        
+
+
+
+            <div class="icons">
+                <div style="height: 20px;"> <img src="assets\shuffle.svg" alt="" width="20px"> </div>
+                <div style="height: 20px;"> <img src="assets\next.svg" alt="" width="20px"
+                        style="transform: rotate(180deg);"></div>
+                <div class="play" onclick="handlePlay()"> <img src="assets\play.svg" alt="" width="20px" class="p"
+                        id="pp"></div>
+                <div style="height: 20px;"> <img src="assets\next.svg" alt="" width="20px"></div>
+                <div style="height: 20px;"> <img src="assets\repeat.svg" alt="" width="20px"></div>
+            </div>
+        </div>
+        </section>
+
+        <div class="quality">
+            <div><img src="assets\wave.svg" alt="q" width="20px"> </div>
+            <div style="color: #D1D6D9; font-size: 10px; margin-left: 5px;">Audio quality: Basic</div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+@import 'header';
+@import 'cover';
+@import 'player';
+
+body{
+    background-color: #304040;
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+.spotify {
+  margin: 0;
+  position: absolute;
+  //top: 50%;
+  left: 25%;
+  -ms-transform: translate(-25%, -25%);
+  transform: translate(-25%, -25%);
+}
+    
+.cover{
+    width: 23%;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+}
+.header{
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+}
+
+@media only screen and (min-width: 411px)  {
+.spotify{
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+}
+
+@media only screen and (min-height: 812px)  {
+.spotify{
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+}
