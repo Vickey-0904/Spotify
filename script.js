@@ -10,17 +10,14 @@ var seekbar = document.querySelector('.seekbar')
 
     if (music.paused) {
         music.play();
-        
-        // playBtn.className = 'pause'
-        // playBtn.innerHTML = '<i class="material-icons">pause</i>'
+        document.getElementById("pp").src="assets/pause.svg";
+        document.getElementById("pp").style.marginLeft = "15px";
     } else {
         music.pause();
-        // playBtn.className = 'play'
-        // playBtn.innerHTML = '<i class="material-icons">play_arrow</i>'
+        document.getElementById("pp").src="assets/play.svg";
+        document.getElementById("pp").style.marginLeft = "17px";
     }
      music.addEventListener('ended', function () {
-    //     playBtn.className = 'play'
-    //     playBtn.innerHTML = '<i class="material-icons">play_arrow</i>'
          music.currentTime = 0
      });
 music.onloadeddata = function () {
